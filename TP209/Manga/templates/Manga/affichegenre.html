@@ -1,0 +1,16 @@
+{% extends "Manga/main.html" %}
+{% block title %}
+    Fiche {{Genre.nomgenre}}
+{%endblock%}
+{%block content%}
+
+    <h1 class="same"> Le genre {{Genre.nomgenre}} </h1>
+    <p> C'est un genre destiné aux {{Genre.pegi}} plutôt ciblé pour les {{Genre.aimedPublic}} </p>
+    <p class="same"> Liste des mangas du même genre </p>
+    <ol>
+        {% for l in liste%}
+            <li> Titre : {{l.titre}} </li>
+        {%endfor%}
+    </ol>
+     <a class="blot" href="/Manga/index/ajout/{{Genre.id}}/"> Ajouter un manga dans cette catégorie </a>
+{%endblock%}

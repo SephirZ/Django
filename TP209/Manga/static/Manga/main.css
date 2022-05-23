@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+
+
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:800;
+    margin:0;
+    padding:0;
+}
+html {
+  background: url('https://wallpaperaccess.com/full/1245781.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#header {
+    background-color:rgba(2,0,47,255);
+    color:white;
+    border-radius: 5px 20px 5px;
+    padding: 3% 3% 3% 3%;
+    width:70%;
+    margin:1% auto;
+    text-align:center;
+}
+
+#header a {
+    color:white;
+    font-size:24px;
+    width:50%;
+    margin: 0 5% 0 5%;
+}
+
+li {
+    font-weight:800;
+}
+
+#content h1, h3, p {
+    text-align:center;
+    font-size:24px;
+
+}
+
+#content label {
+    vertical-align:top;
+
+}
+
+#content input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700;
+    text-align:center
+}
+
+#content li {
+    list-style-type:none;
+    margin-top:1%;
+    text-align:center;
+    font-size:24px;
+}
+.title {
+    font-size:24px;
+}
+.same {
+    text-decoration:underline;
+}
+
+
+.details {
+    color:white;
+    text-decoration:none;
+    margin-left:1%;
+    font-size:18px;
+}
+.blot {
+    margin:auto;
+    padding:1%;
+    width:20%;
+    text-align:center;
+    display:block;
+    background-color:rgb(31,115,188);
+    border-radius:5px;
+    text-decoration:none;
+    font-size:25px;
+    color:white;
+}
+.blot:hover {
+    background-color:rgb(162,144,213);
+
+}
+ol {
+    padding:0;
+
+
+.send {
+    margin:auto;
+    width:20%;
+}
+
+textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:800;
+}
+.descgenre {
+    text-align:center;
+}

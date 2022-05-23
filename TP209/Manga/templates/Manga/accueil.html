@@ -1,0 +1,18 @@
+{% extends "Manga/main.html" %}
+{% block title %}
+  Accueil
+{% endblock %}
+
+{% block content %}
+<h1> Genres </h1>
+<a class="blot" href="ajoutgenre/"> Ajouter un genre </a>
+ <ol>
+        {% for l in Liste %}
+            <li class="title"> {{l.nomgenre}} </br> </li>
+            <li>
+                <a class ="details" href="./affiche/{{l.id}}"> Détails </a> <a class ="details" href="delete/{{l.id}}"> Effacer </a>
+                <a class ="details" href="update/{{l.id}}"> Mettre à jour </a>
+            </li>
+        {%endfor%}
+    </ol>
+{% endblock %}

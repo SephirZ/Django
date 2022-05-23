@@ -1,0 +1,13 @@
+{% extends "Manga/main.html" %}
+{% block title %}
+    Modification d'un genre
+{%endblock%}
+{%block content%}
+
+  <form method="post" action="/Manga/traitementupdategenre/{{id}}">
+    {% csrf_token %}
+    {{ form.as_ul }}
+      <center>
+      <input type="submit" value="Envoyer les données"/></center>
+  </form>
+{%endblock%}}

@@ -1,0 +1,15 @@
+{% extends "Manga/main.html" %}
+{% block title %}
+    Liste des Mangas
+{%endblock%}
+{%block content%}
+<h1> Manga </h1>
+ <ol>
+        {% for l in Liste %}
+            <li class="title"> {{l}} </br>
+                <a class ="details" href="./affiche/{{l.id}}"> Détails </a> <a class ="details" href="delete/{{l.id}}"> Effacer </a>
+                <a class ="details" href="update/{{l.id}}"> Mettre à jour </a>
+            </li>
+        {%endfor%}
+ </ol>
+{%endblock%}

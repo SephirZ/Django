@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'Manga/main.css' %}">
+    <title>{% block title %} Mangathèque {% endblock %} </title>
+</head>
+<body>
+    <header id="header">
+    {% block header %}
+    <nav>
+        <a href="/Manga/">Accueil</a>
+        <a href="/Manga/index">Tous les mangas</a>
+    </nav>
+    {%endblock%}
+    </header>
+    <div id="content">
+        {% block content %}
+            <h1> Genres </h1>
+        {% endblock %}
+    </div>
+</body>
+</html>

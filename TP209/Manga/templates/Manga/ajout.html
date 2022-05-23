@@ -1,0 +1,14 @@
+{% extends "Manga/main.html" %}
+{% block title %}
+    Liste des Mangas
+{%endblock%}
+{%block content%}
+  <form method="post" action="/Manga/traitement/{{id}}/">
+    {% csrf_token %}
+    {{ form.as_ul }}
+    <center>
+      <input class="send" type="submit" value="Envoyer les données"/>
+    </center>
+
+  </form>
+{%endblock%}

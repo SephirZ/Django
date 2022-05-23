@@ -1,0 +1,11 @@
+{% extends "Manga/main.html" %}
+{% block title %}
+    Fiche {{Manga.titre}}
+{%endblock%}
+{%block content%}
+<body>
+    <h1> {{Manga.titre}} </h1>
+    <p> Ce manga est écrit par {{Manga.auteur}}, du genre {{Manga.genre}}. Il possède {{Manga.nombre_tomes}} tomes. Genre : {{Manga.genre}} </p>
+    <h3> Synopsis :  </h3>
+    <p> {{Manga.synopsis}}</p>
+{%endblock%}
